@@ -1,3 +1,8 @@
+/**
+ * Remove duplicates from sorted array
+ * 08/20/20
+ */
+
 var removeDuplicates = function(nums) {
   let i = 0;
 

@@ -1,7 +1,6 @@
 /**
- * @param {number[]} nums
- * @param {number} val
- * @return {number}
+ * Remove value from array
+ * 08/20/20
  */
 
 var removeElement = function(nums, val) {
