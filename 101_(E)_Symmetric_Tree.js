@@ -5,6 +5,8 @@
   For example, this binary tree [1,2,2,3,4,4,3] is symmetric:
 
   Solution: https://leetcode.com/problems/symmetric-tree/discuss/33073/JavaScript-recursive-and-iterative-solutions
+
+  10/01/2020
  */
 
 // Recursive
