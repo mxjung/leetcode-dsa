@@ -12,6 +12,10 @@ Open brackets must be closed in the correct order.
 
 var isValid = function(s) {
   let pairObj = {')': '(', ']':'[', '}':'{'};
+  // In this case, a stack would work because we want to make sure that
+  // when we see a closed bracket, everything inside that bracket should
+  // have been satisfied already (meaning all brackets pairs closed, or
+  // there are no brackets inside the recently closed bracket)
   let bracketStack = [];
   // convert string to array
   s = s.split('');
