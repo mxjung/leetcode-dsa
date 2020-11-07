@@ -7,6 +7,8 @@
  *
  * Array
  * 10/29/2020
+ *
+ * Revised 11/06/2020
  */
 
 var rotate = function (matrix) {
