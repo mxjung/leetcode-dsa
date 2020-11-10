@@ -8,39 +8,22 @@ Given a singly linked list of integers l and an integer k, remove all elements f
  */
 
 function removeKFromList(l, k) {
+  let curr;
 
-  if (l === null) {
-    return l;
-  } else if (l.next === null && l.value === k) {
-    return l.next;
+  // remove leading k values with changing l
+  while (l && l.value == k) {
+    l = l.next;
   }
 
-  let currNode = l;
-  let nextNode = currNode.next;
-
-  while (true) {
-    // console.log('curr: ', currNode.value, ' next: ', nextNode.value);
-
-    if (currNode.value === k) {
-      if (nextNode) {
-        // check if nextNode is null
-        currNode.value = nextNode.value;
-        currNode.next = nextNode.next;
-      } else {
-        currNode = nextNode;
-      }
-      console.log('removed : ', l);
+  // loop to the end.
+  // skip nodes with k values.
+  curr = l;
+  while (curr && curr.next) {
+    if (curr.next.value == k) {
+      curr.next = curr.next.next;
     } else {
-      currNode = nextNode;
+      curr = curr.next;
     }
-
-    if (currNode === null) {
-      break;
-    }
-
-    nextNode = currNode.next;
-    // console.log(currNode.value, nextNode.value)
   }
-
   return l;
 }
