@@ -5,23 +5,25 @@ Given a binary tree t and an integer s, determine whether there is a root to lea
 11/10/2020
  */
 
+//
+// Binary trees are already defined with this interface:
+// function Tree(x) {
+//   this.value = x;
+//   this.left = null;
+//   this.right = null;
+// }
 function hasPathWithGivenSum(t, s) {
   if (t === null) {
-    if (s === 0) {
+    return false;
+  } else if (t.left === null && t.right === null) {
+    if (s - t.value === 0) {
       return true;
     } else {
       return false;
     }
   } else {
-    let left;
-    let right;
-    console.log(t.left === null);
-    if (t.left !== null) {
-      left = hasPathWithGivenSum(t.left, s - t.value);
-    }
-    if (t.right !== null) {
-      right = hasPathWithGivenSum(t.left, s - t.value);
-    }
+    let left = hasPathWithGivenSum(t.left, s - t.value);
+    let right = hasPathWithGivenSum(t.right, s - t.value);
 
     return left || right;
   }
