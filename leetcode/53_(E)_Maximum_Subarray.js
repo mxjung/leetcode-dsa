@@ -19,6 +19,9 @@ var maxSubArray = function (nums) {
 
 /*
 
+Also note:
+https://leetcode.com/problems/maximum-subarray/discuss/164670/JavaScript-Solution-Comparisons
+
 Explanation:
 
 Ex Input: [-2,1,-3,4,-1,2,1,-5,4]
