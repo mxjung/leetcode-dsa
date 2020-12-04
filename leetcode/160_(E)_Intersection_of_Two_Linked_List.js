@@ -30,5 +30,5 @@ var getIntersectionNode = function (headA, headB) {
   return pointerA;
 };
 
-// Link to explanation
+// Explanation Link
 // https://leetcode.com/problems/intersection-of-two-linked-lists/discuss/49785/Java-solution-without-knowing-the-difference-in-len!
