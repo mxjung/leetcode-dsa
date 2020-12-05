@@ -41,4 +41,5 @@ for (let j = 1; j * i < n; j++) {
 loop, the previous loops should have accounted for these non primes, therefore you
 can loop through the main loop and check every number from 0 to n.
 
+Also: https://leetcode.com/problems/count-primes/discuss/57607/JS-Solution-(since-JS-solutions-are-so-few)
 */
