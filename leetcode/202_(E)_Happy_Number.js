@@ -31,3 +31,5 @@ const multiVal = (num) => {
 
   return sumVal;
 }
+
+console.log(isHappy(19));
